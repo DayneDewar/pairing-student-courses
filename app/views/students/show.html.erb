@@ -1,0 +1,11 @@
+<h2> Here is <%=@student.name%> </h2>
+<ul>
+<% @courses.each do |course|%>
+    <li>
+        <%=link_to course.name, course_path(course)%>  
+    </li>
+<%end%>
+</ul>
+
+<%=link_to "Edit to your Info", edit_student_path(@student)%>
+<%=button_to "Destroy Yourself :(", student_path(@student), method "delete"%>

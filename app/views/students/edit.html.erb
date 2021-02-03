@@ -1,0 +1,9 @@
+<h2> Edit a Student </h2>
+
+<%= form_for @student do |f| %>
+<%=f.label :name, "Please Update a Name"%>
+<%=f.text_field :name %>
+<%=f.label :age, "Please Update Your Age"%>
+<%=f.number_field :age %>
+<%=f.submit%>
+<%end%>
